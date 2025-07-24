@@ -1,0 +1,23 @@
+#include <iostream.h>
+#include <conio.h>
+struct Student{
+ private:
+ int age;
+ float cgpa;
+ public:
+ void inpu(int a,float b){
+  age = a;
+  cgpa = b;
+ }
+ void show(){
+  cout << age << ", " << cgpa;
+ }
+}
+
+main(){
+ clrscr();
+ struct Student s;
+ s.inpu(18,9.65);
+ s.show();
+ getch();
+}
